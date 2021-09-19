@@ -20,6 +20,7 @@ std::string middle(std::string str) {
     } else {
         return str.substr(1, 1);
     }
+    
     return "";
 }
 
