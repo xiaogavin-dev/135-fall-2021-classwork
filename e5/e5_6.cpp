@@ -12,6 +12,14 @@ or the two middle characters if the length is even. For example, middle("middle"
 #include <iostream>
 #include <string>
 
+std::string middle(std::string str);
+
+int main() {
+    // std::cout << middle("ending") << std::endl;
+
+return 0;
+}
+
 std::string middle(std::string str) { 
     if(str.length() % 2 == 0 && str.length() > 3) { 
         return str.substr(str.length() / 2 - 1, str.length() / 2 - 1);
@@ -22,10 +30,4 @@ std::string middle(std::string str) {
     }
     
     return "";
-}
-
-int main() {
-    // std::cout << middle("ending") << std::endl;
-
-return 0;
 }
