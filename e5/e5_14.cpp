@@ -15,6 +15,9 @@ sort2(u, v); // u is still 2, v is still 3
 sort2(w, x); // w is now 1, x is now 4
 */
 
+#include <iostream>
+#include <string>
+
 void sort2(int& a, int& b) { 
     int temp;
     if(a > b) { 
@@ -23,9 +26,6 @@ void sort2(int& a, int& b) {
         b = temp; 
     }
 }
-
-#include <iostream>
-#include <string>
 
 int main() {
     int u = 2;
