@@ -25,17 +25,18 @@ void sort2(int& a, int& b) {
 }
 
 void sort3(int& a, int& b, int& c) { 
-    for(int i = 0; i < 3; i++) { 
-
-    }
+    sort2(a, b); 
+    sort2(b, c); 
+    sort2(a, c); 
+    sort2(a, b);
 }
 
 int main() {
-    int v = 3;
-    int w = 4;
-    int x = 1;
+    int v = 11;
+    int w = 6;
+    int x = 10;
     sort3(v, w, x); // v is now 1, w is now 3, x is now 4
 
-    std::cout << v << " "
+    std::cout << v << " " << w << " " << x << std::endl;
     return 0;
 }
