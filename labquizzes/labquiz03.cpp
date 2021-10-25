@@ -13,8 +13,8 @@ Uses ‘cout >>’ to print each number on a separate line
 #include <array>
 
 int main() {
-    std::array<int, 10> num; 
-    for(int i = 0; i < num.size(); i++) { 
+    int num[10];
+    for(int i = 0; i < 10; i++) { 
         num[i] = i + 1;
         std::cout << num[i] << std::endl;
     }

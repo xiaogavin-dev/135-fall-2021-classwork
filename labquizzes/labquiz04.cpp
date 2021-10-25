@@ -28,6 +28,7 @@ int main() {
         std::cout << line << std::endl;
     }
 
+    fin.close();
 
     return 0;
 }
