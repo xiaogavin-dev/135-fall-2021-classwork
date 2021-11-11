@@ -24,6 +24,7 @@ struct Triangle {
 };
 
 double distance(Point a, Point b);  
+double perimeter(Triangle t);
 
 int main() { 
     int x, y; 
@@ -48,11 +49,15 @@ int main() {
     Triangle tri = { a, b, c };
 
     // a to b, b to c, c to a 
-    double perimeter = distance(tri.a, tri.b) + distance(tri.b, tri.c) + distance(tri.c, tri.a);
+    double p = perimeter(tri);
 
-    std::cout << "Perimeter: " << perimeter << std::endl; 
+    std::cout << "Perimeter: " << p << std::endl; 
 }
 
 double distance(Point a, Point b) { 
     return sqrt(pow(a.x - b.x, 2) + pow(a.y - b.y, 2)); 
+}
+
+double perimeter(Triangle t) { 
+    return distance(t.a, t.b) + distance(t.b, t.c) + distance(t.c, t.a);
 }
