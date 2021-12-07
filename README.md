@@ -1,1 +1,3 @@
-# in_class_work_2021
+# **PLEASE DO NOT COPY ANY WORK FROM THIS GITHUB**
+
+Assignments during the fall 2021 semester for CSCI 135
