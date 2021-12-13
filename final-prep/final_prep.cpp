@@ -1,11 +1,11 @@
 1.1: Declare a class Doctor, subclass of Person and inherits 
     class Doctor : public Person {};
 1.2: Declare a vector of strings called greetings, init with "Hello", "Hi", "Morning".
-    std::vector<std::string> greetings("Hello", "Hi", "Morning");
+    std::vector<std::string> greetings = {"Hello", "Hi", "Morning"};
 1.3: Suppose int arr[] = { 2, 3, 4 }; what is *(arr + 2)?
     4
 1.4: Write the header of a function, for two given strings, return their total number of characters 
-    int total_chars(std::string s1, std::string s2) {}
+    int total_chars(std::string s1, std::string s2);
 1.5: What is the possible values for rand() % 5 - 1?
     -1 to 3 inclusive 
 1.6: Declare a struct called Window, has three parts, length and width as integers, and style as a string 
@@ -41,9 +41,9 @@ int main() {
     return 0;
 }
 
-total = 2
-total = 7
-total = 9
+    // total = 2
+    // total = 7
+    total = 9
 1.8: Read the following code. What is the output?
 class Computer {
     private:
@@ -77,7 +77,7 @@ int main()
     return 0;
 }
 
-0
+    1
 1.9: Declare and initialize a two-dimensional int array called arr with the first row 1, 2, 3, the second row 4, 5, 6, and the third row 7, 8, 9.
     int arr[3][3] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 1.10: What is the output for the following code?
