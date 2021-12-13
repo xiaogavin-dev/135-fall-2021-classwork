@@ -112,7 +112,7 @@ for (int i = 1; i <= 3; i++)
     data = nullptr; 
 2.2: Define a recursive function that takes a string, return its reversed version. For example, if the input is “abc”, the return is “cba”.
 Define function header. Suppose the function name is reverse, the given parameter is called str.
-    std::string reverse(std::string str) {}
+    std::string reverse(std::string str);
 2.2: If str has at most one char, return str. You can use size() function from string class.
     if(str.length() == 1) { 
         return str;
